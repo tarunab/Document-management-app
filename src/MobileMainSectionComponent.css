@@ -1,0 +1,36 @@
+.mobile-main-section .filter-container {
+    position: absolute;
+    top: 110px;
+    left: 120px;
+    transform: translateX(-45%);
+    background-color: white;
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+    width: 200px;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.mobile-page-title {
+    font-family: Helvetica;
+    font-size: 18px;
+    color: #202020;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+.mobile-main-section .btn {
+    margin-top: 10px;
+}
+
+.mobile-main-section .btn span {
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+}
+
+.mobile-main-section .table-cell {
+    max-width: 30px;
+    overflow-wrap: break-word;
+}
