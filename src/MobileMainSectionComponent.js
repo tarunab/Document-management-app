@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
-import FilterComponent from './FilterComponent';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import GridComponent from './GridComponent';
-import './MobileMainSectionComponent.css';
-function MobileMainSectionComponent({ documentsList, setFilterDocuments, tableDocuments }) {
+import FilterComponent from "./FilterComponent";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import GridComponent from "./GridComponent";
+import "./MobileMainSectionComponent.css";
+function MobileMainSectionComponent({
+  documentsList,
+  setFilterDocuments,
+  tableDocuments,
+}) {
   const [open, setOpen] = useState(false);
   useEffect(() => {
     setFilterDocuments(documentsList);
@@ -14,21 +18,17 @@ function MobileMainSectionComponent({ documentsList, setFilterDocuments, tableDo
       <div className="page-title-container">
         <span className="mobile-page-title">Documents</span>
       </div>
-      <button
-        className="btn primary-button"
-        onClick={() => setOpen(!open)}
-      >
-          <FilterAltIcon />
+      <button className="btn primary-button" onClick={() => setOpen(!open)}>
+        <FilterAltIcon />
         <span>Filters</span>
       </button>
-      {open && <FilterComponent
-        setFilterDocuments={setFilterDocuments}
-        documentsList={documentsList}
-      />}
-        <GridComponent tableDocuments={tableDocuments} />
-          
+      {open && (
+        <FilterComponent
+          setFilterDocuments={setFilterDocuments}
+          documentsList={documentsList}
+        />
+      )}
     </div>
-
   );
 }
 
