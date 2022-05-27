@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Created a react app for document mangement and shown list of documents in tabular format with pagination and filtering abilities.
 
 ## Available Scripts
 
